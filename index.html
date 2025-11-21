@@ -4,75 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');</style>
+    <style>
+        #CapitalEqualPain {
+            font-weight: 900;
+            background-image: url("./asset/TextPattern.jpeg");
+            background-size: 200% 200%;
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: contrast(180%) blur(3px) grayscale(80%);
+            animation: glitchFlow 1ms infinite linear;
+            background-size: auto;
+        }
+        @keyframes glitchFlow {
+            0% {
+                background-position: 0% 0%;
+            }
+            25%{
+                background-position: 10% 10%;
+            }
+            50% {
+                background-position: 99% 90%;
+            }
+            100% {
+                background-position: 30% 30%;
+            }
+        }
+
+        #CapitalEqualPain.show {
+            opacity: 1;
+            transition: opacity 0.25s ease-out;
+        }
+
+        #CapitalEqualPain.hide {
+            opacity: 0;
+            transition: opacity 0.12s ease-in;
+        }
+    </style>
+    <link rel="stylesheet" href="main.css" type="text/css">
     <title>Mago Cluster</title>
 </head>
 <body>
     <main>
-        <h1>
-            # 살인기계, 자본. 이 글은 개같은 현실을 끝내기 위한, 혁명을 위한 메니페스토다. 이 목소리가 당신의 목소리로 닿을 때까지 이 세상에 유일한 공통의 진실, 고통의 비평을 봐라. 우리에겐 번역기라는 기술이 있다.
-            <br>
-            # This is a manifesto written to tear down this fucked-up reality. The killing machine: capital. Use the translator. Until this voice reaches you as your own, face the only truth we all share in this world: the critique of suffering.
-            <br>
-            # 这是一份为终结这个操蛋现实而写下的宣言。杀戮机器：资本。用翻译器。直到这声音成为你的声音，看清这个世界唯一的共同真相：对苦难的控诉。
-            <br>
-            # Dies ist ein Manifest, um diese beschissene Realität zu beenden. Die Tötungsmaschine: das Kapital. Benutz den Übersetzer. Bis diese Stimme zu deiner eigenen wird, sieh der einzigen gemeinsamen Wahrheit dieser Welt ins Gesicht: der Anklage des Leidens.
-            <br>
-            # Este manifiesto nace para derrumbar esta realidad de mierda. La máquina de matar: el capital. Usa el traductor. Hasta que esta voz sea también tu voz, mira de frente la única verdad común en este mundo: la denuncia del sufrimiento.
-            <br>
-            # Ceci est un manifeste pour mettre fin à cette réalité de merde. La machine à tuer : le capital. Utilise le traducteur. Jusqu’à ce que cette voix devienne la tienne, regarde en face la seule vérité que nous partageons : l’accusation de la souffrance.
-            <br>
-            # Это манифест, созданный, чтобы покончить с этой долбаной реальностью. Убийственная машина — капитал. Пользуйся переводчиком. Пока этот голос не станет твоим, смотри в лицо единственной общей истине мира: обвинению страдания.
-            <br>
-            # これは、このクソみたいな現実を終わらせるために書かれたマニフェストだ。殺戮装置――資本。翻訳ツールを使え。この声がお前自身の声になるその時まで、この世界でただひとつ共有される真実、苦痛への告発を直視しろ。
-            <br>
-            # هذا بيان كُتب لإنهاء هذا الواقع القذر. آلة القتل: الرأسمال. استخدم المترجم. حتى يصل هذا الصوت إليك بصوتك أنت، واجه الحقيقة الوحيدة التي نشترك فيها في هذا العالم: إدانة الألم.
-            <br>
-            # Öldürme makinesi, sermaye. Bu metin bu boktan gerçekliği bitirmek için yazılmış devrimci bir manifestodur. Bu ses senin kendi sesine dönüşene kadar, bu dünyadaki tek ortak hakikate bak: acının eleştirisine. Çeviri teknolojimiz var.
-            <br>
-            # Mashine ya kuuua, mtaji. Huu ni manifesto wa mapinduzi kumaliza uhalisia huu wa kilafi. Mpaka sauti hii ifikie masikioni mwako kama sauti yako, tazama kweli ya pekee tunayoshirikiana: ukosoaji wa mateso. Tuna teknolojia ya kutafsiri.
-            <br>
-            # የመግደል ማሽን፣ ያንቀሳቃሽ ሃብት. ይህ ጽሑፍ ይህን ተረት ያለበትን እውነት ለመፍጠር የተጻፈ የአብዮት ማኒፌስቶ ነው። ይህ ድምጽ ድምጵህ እስኪሆን ድረስ፣ በዓለም የምናጋጠምውን ብቸኛውን እውነት—የሕማት ትንታኔ—ተመልከት። የትርጉም መሳሪያ አለን።
-            <br>
-            # Ẹ̀rọ apaniyan, olu-ilu. Ìwé yìí ni manifestọ́ àtúnṣàkóso tí a kọ sí parí ìdílé ayé búburú yìí. Títí tí ohùn yìí yóò fi di ohùn tirẹ, wo òtítọ́ kan ṣoṣo tí gbogbo ayé ní papọ̀: àyẹ̀wò ìrora. A ní imọ-ẹrọ ìtumọ̀.
-            <br>
-            # Umshini wokubulala, ikhapitali. Lo mbhalo uyimanifesto lezinguquko lokuqeda leliqiniso elinaso udoti. Kuze kufike isikhathi lapho leli zwi seliyizwi lakho, bheka iqiniso esilibambisene sonke: ukuhlaziywa kobuhlungu. Sinayo ubuchwepheshe bokuhumusha.
-            <br>
-            # हत्या गर्ने मेसिन, पुँजी। यो लेख यो घृणित यथार्थ समाप्त गर्न लेखिएको एक क्रान्तिकारी म्यानिफेस्टो हो। यो आवाज तिम्रो आफ्नै जस्तो भएर तिमीलाई नछुन्जेल, यो संसारको साझा एउटै सत्य—पीडाको आलोचना—लाई हेर्नु। हाम्रसँग अनुवाद गर्ने प्रविधि छ।
-            <br>
-            # यह इस हरामखोर हक़ीक़त को ख़त्म करने के लिए लिखा गया घोषणापत्र है। क़त्ल की मशीन: पूँजी। अनुवादक का इस्तेमाल करो। जब तक यह आवाज़ तुम्हारी अपनी न बन जाए, इस दुनिया की एकमात्र साझा सच्चाई—पीड़ा के अभियोग—को देखो।
-            <br>
-            # මිනීමැෂින්, ප්රාථමික අරමුදල. මෙම ලිපිය මේ අභියෝගාත්මක නරක යථාර්ථය අවසන් කිරීමට ලියූ විප්ලවීය මැනිෆෙස්ටෝවකි. මෙම හඬ ඔබගේ හඬ බවට පත්වෙන්නැයි, ලොකයේ අපට共通 වන එකම සත්‍යය—වෙදනාවේ විවේචනය—නරඹන්න. අපට පරිවර්තන තාක්ෂණය ඇත.
-            <br>
-            # கொலை இயந்திரம், மூலதனம். இந்த அருவருப்பான நிஜத்தை முடிக்க எழுதப்பட்ட புரட்சியாளர் அறிக்கையே இது. இந்த குரல் உன் சொந்த குரலாக உன்னை அடையும் வரை, உலகம் பகிர்ந்து கொள்ளும் ஒரே உண்மை—வேதனையின் விமர்சனம்—எதிர்கொள். மொழிபெயர்ப்பு தொழில்நுட்பம் நமக்குள்ளது.
-            <br>
-            # এটা এই হারামজাদা বাস্তবতাকে শেষ করার জন্য লেখা একটা ম্যানিফেস্টো। হত্যার যন্ত্র: পুঁজি। অনুবাদক ব্যবহার করো। যতক্ষণ না এই কণ্ঠস্বর তোমার নিজের হয়ে ওঠে, এই বিশ্বের একমাত্র সাধারণ সত্য—যন্ত্রণা-বিরোধী অভিযোগ—কে সামনে দেখো।
-            <br>
-            # นี้คือแถลงการณ์ที่เขียนขึ้นเพื่อทำลายความจริงอันเฮงซวยนี้ เครื่องจักรสังหาร: ทุน ใช้ตัวแปลภาษา จนกว่าเสียงนี้จะกลายเป็นเสียงของคุณ มองดูความจริงเพียงหนึ่งเดียวที่พวกเราทุกคนร่วมกันแบ่งปัน: การกล่าวโทษต่อความทุกข์ทรมาน.
-            <br>
-            # Mesin pembunuh, modal. Teks ini ialah manifesto revolusi untuk menamatkan realiti celaka ini. Hingga suara ini menjadi suaramu sendiri, lihatlah satu-satunya kebenaran bersama di dunia ini: kritikan terhadap penderitaan. Kita punya teknologi penterjemah.
-            <br>
-            # Makina ng pagpatay, kapital. Ang tekstong ito’y isang rebolusyonaryong manipesto para wakasan ang bulok na realidad na ito. Hanggang ang tinig na ito’y maging tinig mo, harapin ang nag-iisang katotohanang pinagsasaluhan natin: ang paghusga sa pagdurusa. May teknolohiya tayo para isalin.
-            <br>
-            # Mesin matèni, modal. Iki manifesto revolusioner kanggo ngrampungaké kasunyatan edan iki. Nganti swara iki dadi swaramu dhewe, delengen siji-sijiné kasunyatan bebarengan ing donya iki: kritik marang sangsara. Kita nduwé teknologi terjemahan.
-            <br>
-            # Mīkini pepehi, kapikala. He palapala kū‘ē kēia i kākau ‘ia e hoʻopau i kēia kūlana pilau. A hiki i kēia leo ke lilo i leo iā ‘oe iho, nānā i ka naʻaupono hoʻokahi a kākou a pau—ka loiloi i ka ‘eha. Aia iā kākou ka loina unuhi.
-            <br>
-            # Te mīhini whakamate, te kapita. He tauākī whakahē tēnei hei huri i tēnei ao paruparu. Kia tae rawa tēnei reo ki a koe hei tō reo ake, tirohia te kotahi o ngā pono e honoa nei tātou: te arotake i te mamae. Kei a tātou te hangarau whakamāori.
-            <br>
-            # Le masini fasioti, tupe faapisinisi. O lenei tusitusiga o se manifiesto faafouvale e faamutaina ai lenei mea moni fucking. Seia oo ina avea lenei leo ma lou lava leo, vaai i le pau lea o le upu moni e tutusa ai i tatou uma: le iloiloga o le tiga. E iai le tatou tekonolosi faaliliu.
-            <br>
-            # Na misini ni vakamatei, kapilani. Na vola oqo e dua na manifesto ni veivakacegui me muduka na dina velavela oqo. Me yaco mada na domo oqo me nomu dina, raica na dina duadua eda veivakawati kina: na vakadikevi ni rarawa. E tu vei keda na tekinolosi ni vakadewataki.
-            <br>
-            # قتل کی مشین، سرمایہ۔ یہ تحریر اس گھٹیا حقیقت کو ختم کرنے کے لیے لکھا گیا انقلابی منشور ہے۔ جب تک یہ آواز تمہاری اپنی آواز نہ بن جائے، اس دنیا کی واحد مشترکہ حقیقت—دکھ کی تنقید—کو دیکھو۔ ہمارے پاس ترجمے کی ٹیکنالوجی موجود ہے۔
-            <br>
-            # ᠮᠣᠩᠭᠤᠯ ᠪᠤᠰ ᠳᠠᠩᠭᠠᠨ ᠬᠡᠪᠲᠡᠨ ᠡᠷ ᠬᠠᠮᠲᠠᠢ ᠬᠤᠷᠴᠢᠭ ᠠᠬᠢᠯ ᠬᠡᠪᠲᠦ ᠪᠠᠶᠢᠨ ᠡᠷᠬᠦ ᠪᠦᠭᠦᠳᠡᠭᠡᠳᠦ᠂ ᠬᠡᠪᠲᠦ ᠬᠡᠷᠬᠡᠨ ᠬᠣᠷᠢᠭ: ᠬᠠᠪᠲᠠᠯ. ᠪᠦᠭᠡᠷᠢᠳᠦᠭ ᠬᠤᠷᠲᠤ ᠦᠰᠦ. ᠬᠡᠰ ᠤᠨᠤ ᠭᠣᠯᠭᠣᠬᠤ ᠬᠣᠷᠢᠭ ᠪᠠᠢᠨ᠎ᠠ᠃ ᠦᠨᠳᠦᠯ ᠬᠡᠳᠦ ᠵᠠᠢᠮ ᠬᠡᠪᠡᠷ ᠬᠣᠷᠢᠭ ᠰᠡᠳᠦᠯᠬᠡᠢ ᠲᠤᠩ ᠬᠡᠪ ᠪᠠᠢᠨ: ᠬᠠᠳᠤᠯᠠᠭ ᠮᠠᠨᠳᠠᠯ.
-            <br>
-            # यो यो हरामी यथार्थलाई अन्त्य पार्न लेखिएको एउटा घोषणापत्र हो। हत्या गर्ने मेसिन: पुँजी। अनुवादक प्रयोग गर। जबसम्म यो आवाज तेरै आवाजको रूपमा नआउँदैन, यस संसारले साझा गरेको एउटै सत्य—पीडाको अभियोग—लाई सीधै हेर।
-            <br>
-            # Wańuy makina, kapital. Kay qillqaqa hinachu kay millay kaq realidadta tukuychanapaq revolucionario manifiestomi. Kay simiqa qankuna simiykimanta rikhuykama, llapan runakuna huk chʼusaq chiqaqta rikuy: ñak’ariykunap ch’aqwasqa. Ñoqaykuqa tikray simita kanchik.
-        </h1>
+        <section>
+            <h2 class="main-instroduction">
+                <a href="http://magocluster.xyz//manifesto">살인기계, <em>자본</em>. 이 글은 개같은 현실을 끝내기 위한, 혁명을 위한 메니페스토다. 이 목소리가 당신의 목소리로 닿을 때까지 이 세상의 유일한 공통의 진실, 고통의 비평을 봐라.</a>
+                <a href="http://magocluster.xyz//manifesto">This is a manifesto written to tear down this fucked-up reality. The killing machine: capital. Use the translator. Until this voice reaches you as your own, face the only truth we all share in this world: the critique of suffering.</a>
+                <a href="http://magocluster.xyz//manifesto">这是一份为终结这个操蛋现实而写下的宣言。杀戮机器：资本。用翻译器。直到这声音成为你的声音，看清这个世界唯一的共同真相：对苦难的控诉。</a>
+                <a href="http://magocluster.xyz//manifesto">Dies ist ein Manifest, um diese beschissene Realität zu beenden. Die Tötungsmaschine: das Kapital. Benutz den Übersetzer. Bis diese Stimme zu deiner eigenen wird, sieh der einzigen gemeinsamen Wahrheit dieser Welt ins Gesicht: der Anklage des Leidens.</a>
+                <a href="http://magocluster.xyz//manifesto">Este manifiesto nace para derrumbar esta realidad de mierda. La máquina de matar: el capital. Usa el traductor. Hasta que esta voz sea también tu voz, mira de frente la única verdad común en este mundo: la denuncia del sufrimiento.</a>
+                <a href="http://magocluster.xyz//manifesto">Ceci est un manifeste pour mettre fin à cette réalité de merde. La machine à tuer : le capital. Utilise le traducteur. Jusqu’à ce que cette voix devienne la tienne, regarde en face la seule vérité que nous partageons : l’accusation de la souffrance.</a>
+                <a href="http://magocluster.xyz//manifesto">Это манифест, созданный, чтобы покончить с этой долбаной реальностью. Убийственная машина — капитал. Пользуйся переводчиком. Пока этот голос не станет твоим, смотри в лицо единственной общей истине мира: обвинению страдания.</a>
+                <a href="http://magocluster.xyz//manifesto">これは、このクソみたいな現実を終わらせるために書かれたマニフェストだ。殺戮装置――資本。翻訳ツールを使え。この声がお前自身の声になるその時まで、この世界でただひとつ共有される真実、苦痛への告発を直視しろ。</a>
+                <a href="http://magocluster.xyz//manifesto">هذا بيان كُتب لإنهاء هذا الواقع القذر. آلة القتل: الرأسمال. استخدم المترجم. حتى يصل هذا الصوت إليك بصوتك أنت، واجه الحقيقة الوحيدة التي نشترك فيها في هذا العالم: إدانة الألم.</a>
+                <a href="http://magocluster.xyz//manifesto">Öldürme makinesi, sermaye. Bu metin bu boktan gerçekliği bitirmek için yazılmış devrimci bir manifestodur. Bu ses senin kendi sesine dönüşene kadar, bu dünyadaki tek ortak hakikate bak: acının eleştirisine. Çeviri teknolojimiz var.</a>
+                <a href="http://magocluster.xyz//manifesto">Mashine ya kuuua, mtaji. Huu ni manifesto wa mapinduzi kumaliza uhalisia huu wa kilafi. Mpaka sauti hii ifikie masikioni mwako kama sauti yako, tazama kweli ya pekee tunayoshirikiana: ukosoaji wa mateso. Tuna teknolojia ya kutafsiri.</a>
+                <a href="http://magocluster.xyz//manifesto">የመግደል ማሽን፣ ያንቀሳቃሽ ሃብት. ይህ ጽሑፍ ይህን ተረት ያለበትን እውነት ለመፍጠር የተጻፈ የአብዮት ማኒፌስቶ ነው። ይህ ድምጽ ድምጵህ እስኪሆን ድረስ፣ በዓለም የምናጋጠምውን ብቸኛውን እውነት—የሕማት ትንታኔ—ተመልከት። የትርጉም መሳሪያ አለን።</a>
+                <a href="http://magocluster.xyz//manifesto">Ẹ̀rọ apaniyan, olu-ilu. Ìwé yìí ni manifestọ́ àtúnṣàkóso tí a kọ sí parí ìdílé ayé búburú yìí. Títí tí ohùn yìí yóò fi di ohùn tirẹ, wo òtítọ́ kan ṣoṣo tí gbogbo ayé ní papọ̀: àyẹ̀wò ìrora. A ní imọ-ẹrọ ìtumọ̀.</a>
+                <a href="http://magocluster.xyz//manifesto">Umshini wokubulala, ikhapitali. Lo mbhalo uyimanifesto lezinguquko lokuqeda leliqiniso elinaso udoti. Kuze kufike isikhathi lapho leli zwi seliyizwi lakho, bheka iqiniso esilibambisene sonke: ukuhlaziywa kobuhlungu. Sinayo ubuchwepheshe bokuhumusha.</a>
+                <a href="http://magocluster.xyz//manifesto">हत्या गर्ने मेसिन, पुँजी। यो लेख यो घृणित यथार्थ समाप्त गर्न लेखिएको एक क्रान्तिकारी म्यानिफेस्टो हो। यो आवाज तिम्रो आफ्नै जस्तो भएर तिमीलाई नछुन्जेल, यो संसारको साझा एउटै सत्य—पीडाको आलोचना—लाई हेर्नु। हाम्रसँग अनुवाद गर्ने प्रविधि छ।</a>
+                <a href="http://magocluster.xyz//manifesto">यह इस हरामखोर हक़ीक़त को ख़त्म करने के लिए लिखा गया घोषणापत्र है। क़त्ल की मशीन: पूँजी। अनुवादक का इस्तेमाल करो। जब तक यह आवाज़ तुम्हारी अपनी न बन जाए, इस दुनिया की एकमात्र साझा सच्चाई—पीड़ा के अभियोग—को देखो।</a>
+                <a href="http://magocluster.xyz//manifesto">මිනීමැෂින්, ප්රාථමික අරමුදල. මෙම ලිපිය මේ අභියෝගාත්මක නරක යථාර්ථය අවසන් කිරීමට ලියූ විප්ලවීය මැනිෆෙස්ටෝවකි. මෙම හඬ ඔබගේ හඬ බවට පත්වෙන්නැයි, ලොකයේ අපට共通 වන එකම සත්‍යය—වෙදනාවේ විවේචනය—නරඹන්න. අපට පරිවර්තන තාක්ෂණය ඇත.</a>
+                <a href="http://magocluster.xyz//manifesto">கொலை இயந்திரம், மூலதனம். இந்த அருவருப்பான நிஜத்தை முடிக்க எழுதப்பட்ட புரட்சியாளர் அறிக்கையே இது. இந்த குரல் உன் சொந்த குரலாக உன்னை அடையும் வரை, உலகம் பகிர்ந்து கொள்ளும் ஒரே உண்மை—வேதனையின் விமர்சனம்—எதிர்கொள். மொழிபெயர்ப்பு தொழில்நுட்பம் நமக்குள்ளது.</a>
+                <a href="http://magocluster.xyz//manifesto">এটা এই হারামজাদা বাস্তবতাকে শেষ করার জন্য লেখা একটা ম্যানিফেস্টো। হত্যার যন্ত্র: পুঁজি। অনুবাদক ব্যবহার করো। যতক্ষণ না এই কণ্ঠস্বর তোমার নিজের হয়ে ওঠে, এই বিশ্বের একমাত্র সাধারণ সত্য—যন্ত্রণা-বিরোধী অভিযোগ—কে সামনে দেখো।</a>
+                <a href="http://magocluster.xyz//manifesto">นี้คือแถลงการณ์ที่เขียนขึ้นเพื่อทำลายความจริงอันเฮงซวยนี้ เครื่องจักรสังหาร: ทุน ใช้ตัวแปลภาษา จนกว่าเสียงนี้จะกลายเป็นเสียงของคุณ มองดูความจริงเพียงหนึ่งเดียวที่พวกเราทุกคนร่วมกันแบ่งปัน: การกล่าวโทษต่อความทุกข์ทรมาน.</a>
+                <a href="http://magocluster.xyz//manifesto">Mesin pembunuh, modal. Teks ini ialah manifesto revolusi untuk menamatkan realiti celaka ini. Hingga suara ini menjadi suaramu sendiri, lihatlah satu-satunya kebenaran bersama di dunia ini: kritikan terhadap penderitaan. Kita punya teknologi penterjemah.</a>
+                <a href="http://magocluster.xyz//manifesto">Makina ng pagpatay, kapital. Ang tekstong ito’y isang rebolusyonaryong manipesto para wakasan ang bulok na realidad na ito. Hanggang ang tinig na ito’y maging tinig mo, harapin ang nag-iisang katotohanang pinagsasaluhan natin: ang paghusga sa pagdurusa. May teknolohiya tayo para isalin.</a>
+                <a href="http://magocluster.xyz//manifesto">Mesin matèni, modal. Iki manifesto revolusioner kanggo ngrampungaké kasunyatan edan iki. Nganti swara iki dadi swaramu dhewe, delengen siji-sijiné kasunyatan bebarengan ing donya iki: kritik marang sangsara. Kita nduwé teknologi terjemahan.</a>
+                <a href="http://magocluster.xyz//manifesto">Mīkini pepehi, kapikala. He palapala kū‘ē kēia i kākau ‘ia e hoʻopau i kēia kūlana pilau. A hiki i kēia leo ke lilo i leo iā ‘oe iho, nānā i ka naʻaupono hoʻokahi a kākou a pau—ka loiloi i ka ‘eha. Aia iā kākou ka loina unuhi.</a>
+                <a href="http://magocluster.xyz//manifesto">Te mīhini whakamate, te kapita. He tauākī whakahē tēnei hei huri i tēnei ao paruparu. Kia tae rawa tēnei reo ki a koe hei tō reo ake, tirohia te kotahi o ngā pono e honoa nei tātou: te arotake i te mamae. Kei a tātou te hangarau whakamāori.</a>
+                <a href="http://magocluster.xyz//manifesto">Le masini fasioti, tupe faapisinisi. O lenei tusitusiga o se manifiesto faafouvale e faamutaina ai lenei mea moni fucking. Seia oo ina avea lenei leo ma lou lava leo, vaai i le pau lea o le upu moni e tutusa ai i tatou uma: le iloiloga o le tiga. E iai le tatou tekonolosi faaliliu.</a>
+                <a href="http://magocluster.xyz//manifesto">Na misini ni vakamatei, kapilani. Na vola oqo e dua na manifesto ni veivakacegui me muduka na dina velavela oqo. Me yaco mada na domo oqo me nomu dina, raica na dina duadua eda veivakawati kina: na vakadikevi ni rarawa. E tu vei keda na tekinolosi ni vakadewataki.</a>
+                <a href="http://magocluster.xyz//manifesto"> # قتل کی مشین، سرمایہ۔ یہ تحریر اس گھٹیا حقیقت کو ختم کرنے کے لیے لکھا گیا انقلابی منشور ہے۔ جب تک یہ آواز تمہاری اپنی آواز نہ بن جائے، اس دنیا کی واحد مشترکہ حقیقت—دکھ کی تنقید—کو دیکھو۔ ہمارے پاس ترجمے کی ٹیکنالوجی موجود ہے۔</a>
+                <a href="http://magocluster.xyz//manifesto">ᠮᠣᠩᠭᠤᠯ ᠪᠤᠰ ᠳᠠᠩᠭᠠᠨ ᠬᠡᠪᠲᠡᠨ ᠡᠷ ᠬᠠᠮᠲᠠᠢ ᠬᠤᠷᠴᠢᠭ ᠠᠬᠢᠯ ᠬᠡᠪᠲᠦ ᠪᠠᠶᠢᠨ ᠡᠷᠬᠦ ᠪᠦᠭᠦᠳᠡᠭᠡᠳᠦ᠂ ᠬᠡᠪᠲᠦ ᠬᠡᠷᠬᠡᠨ ᠬᠣᠷᠢᠭ: ᠬᠠᠪᠲᠠᠯ. ᠪᠦᠭᠡᠷᠢᠳᠦᠭ ᠬᠤᠷᠲᠤ ᠦᠰᠦ. ᠬᠡᠰ ᠤᠨᠤ ᠭᠣᠯᠭᠣᠬᠤ ᠬᠣᠷᠢᠭ ᠪᠠᠢᠨ᠎ᠠ᠃ ᠦᠨᠳᠦᠯ ᠬᠡᠳᠦ ᠵᠠᠢᠮ ᠬᠡᠪᠡᠷ ᠬᠣᠷᠢᠭ ᠰᠡᠳᠦᠯᠬᠡᠢ ᠲᠤᠩ ᠬᠡᠪ ᠪᠠᠢᠨ: ᠬᠠᠳᠤᠯᠠᠭ ᠮᠠᠨᠳᠠᠯ.</a>
+                <a href="http://magocluster.xyz//manifesto">यो यो हरामी यथार्थलाई अन्त्य पार्न लेखिएको एउटा घोषणापत्र हो। हत्या गर्ने मेसिन: पुँजी। अनुवादक प्रयोग गर। जबसम्म यो आवाज तेरै आवाजको रूपमा नआउँदैन, यस संसारले साझा गरेको एउटै सत्य—पीडाको अभियोग—लाई सीधै हेर।</a>
+                <a href="http://magocluster.xyz//manifesto">Wańuy makina, kapital. Kay qillqaqa hinachu kay millay kaq realidadta tukuychanapaq revolucionario manifiestomi. Kay simiqa qankuna simiykimanta rikhuykama, llapan runakuna huk chʼusaq chiqaqta rikuy: ñak’ariykunap ch’aqwasqa. Ñoqaykuqa tikray simita kanchik.</a>
+            </h2>
+        </section>
+        <a href="http://magocluster.xyz//manifesto">
+            <div class="sticky-center">
+                <div class="center">
+                    <h1 id="CapitalEqualPain" class="word show">자본 = 고통</h1>
+                </div>
+            </div>
+        </a>
+        <script>
+            (function () {
+            const startText = "자본 = 고통";
+
+            const others = [
+                "الرأسمال = الألم",
+                "سرمایه = درد",
+                "Sermaye = Acı",
+                "Mtaji = Maumivu",
+                "ካፒታል = ህመም",
+                "Olu-ilu = Ìrora",
+                "Ikhapitali = Ubuhlungu",
+                "पूंजी = पीड़ा",
+                "سرمایہ = درد",
+                "পুঁজি = ব্যথা",
+                "पुँजी = पीड़ा",
+                "අරමුදල = වේදනා",
+                "மூலதனம் = வலி",
+                "ทุน = ความเจ็บปวด",
+                "Modal = Kesakitan",
+                "Modal = Penderitaan",
+                "Kapital = Sakit",
+                "Modal = Lara",
+                "Капитал = Өвдөлт",
+                "Kapital = Llaki",
+                "Kapikala = ʻEha",
+                "Kapita = Mamae",
+                "Kapitala = Tiga",
+                "Kapitali = Rarawa"
+            ];
+
+            const display = document.getElementById('CapitalEqualPain');
+
+            let sequence = [];
+            let idx = 0;
+            let timerId = null;
+            const INTERVAL = 500;
+
+            function shuffle(arr) {
+                const a = arr.slice();
+                for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+                }
+                return a;
+            }
+
+            function buildSequence(prevLast) {
+                let shuffled = shuffle(others);
+
+                if (prevLast && shuffled[0] === prevLast) {
+                let attempts = 0;
+                while (attempts < 10 && shuffled[0] === prevLast) {
+                    shuffled = shuffle(others);
+                    attempts++;
+                }
+                if (shuffled[0] === prevLast && shuffled.length > 1) {
+                    [shuffled[0], shuffled[1]] = [shuffled[1], shuffled[0]];
+                }
+                }
+
+                return [startText].concat(shuffled);
+            }
+
+            function showText(text) {
+                display.classList.remove('show');
+                display.classList.add('hide');
+
+                setTimeout(() => {
+                display.textContent = text;
+                display.classList.remove('hide');
+                display.classList.add('show');
+                }, 120);
+            }
+
+            function start() {
+                sequence = buildSequence(null);
+                idx = 0;
+                showText(sequence[idx]);
+
+                if (timerId) clearInterval(timerId);
+
+                timerId = setInterval(() => {
+                const prev = sequence[idx];
+                idx++;
+
+                if (idx >= sequence.length) {
+                    const prevLast = sequence[sequence.length - 1];
+                    sequence = buildSequence(prevLast);
+                    idx = 0;
+                }
+
+                if (sequence[idx] === prev) {
+                    idx = (idx + 1) % sequence.length;
+                }
+
+                showText(sequence[idx]);
+                }, INTERVAL);
+            }
+
+            start();
+
+            window.capitalPainTicker = { start };
+            })();
+        </script>
     </main>
-    <p>This ia my first page.</p>
 </body>
 </html>
 
