@@ -48,7 +48,7 @@ body {
     margin: 0 auto 0 auto;
     width: 100%;
     position: relative;
-    background-color: red;
+    background-color: #5c0017;
     overflow-x: hidden;
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
@@ -56,7 +56,7 @@ body {
 }
 
 body#Manifesto {
-    background-color: #660000;
+    background-color: #5c0017;
 }
 
 body#Manifesto section {
@@ -104,6 +104,10 @@ em {
     height: 100vh;
     align-items: center;
     justify-content: center;
+}
+
+.read-letter {
+    padding-bottom:10px;
 }
 
 h1#CapitalEqualPain {
