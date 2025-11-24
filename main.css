@@ -117,7 +117,7 @@ em {
 
 .read-letter {
     padding-bottom:10px;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 h1#CapitalEqualPain {
