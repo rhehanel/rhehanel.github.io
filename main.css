@@ -711,7 +711,6 @@ body main {
 
 body#Manifesto main {
     margin: 0 auto 0;
-    padding: 20px;
     max-width: 1000px;
 }
 
@@ -737,7 +736,8 @@ iframe {
 }
 
 section {
-    padding: 1vw;
+    padding: 12px;
+    box-sizing: border-box
 }
 
 a {
@@ -786,6 +786,7 @@ em {
 .flex {
     display: flex;
     gap: 1vw;
+    flex-wrap: wrap;
 }
 
 .horizontal {
@@ -869,7 +870,7 @@ h2.main-instroduction a:hover {
 .images {
     display: flex;
     flex-wrap: wrap;
-    gap: 1vw;
+    gap: 12px;
     align-items: baseline;
     align-self: baseline;
 }
@@ -892,5 +893,13 @@ h2.main-instroduction a:hover {
         display: block;
         text-align: center;
         font-size: 3rem;
+    }
+
+    .flex {
+      gap: 15px;
+    }
+
+    img {
+      max-width: 100% !important;
     }
 }
