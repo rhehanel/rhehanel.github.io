@@ -729,8 +729,11 @@ body section p {
 }
 
 iframe {
-    width: 100% !important;
-    margin-bottom: 10px;
+  width: 100%;
+}
+
+.i-belive-in-you iframe {
+  max-height: 60px;
 }
 
 section {
@@ -748,15 +751,19 @@ p a:hover {
 }
 
 section a {
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 0.021rem;
-    line-height: 28.6px;
-    color: #aa001c;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.021rem;
+  line-height: 28.6px;
+  color: #aa001c;
 }
 
 section a.candle {
-    animation: candlefire 3s ease infinite alternate;
+  animation: candlefire 3s ease infinite alternate;
+}
+
+section p:last-of-type {
+  margin-bottom: 0;
 }
 
 @keyframes candlefire {
@@ -787,10 +794,6 @@ em {
 
 .vertical {
     flex-direction: column;
-}
-
-.flex.horizontal.padding {
-    padding: 10px 0;
 }
 
 .sticky-center {
