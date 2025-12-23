@@ -893,6 +893,14 @@ h2.main-instroduction a:hover {
   color: #00A993;
 }
 
+.quote-layout p a {
+  color: #00A993;
+}
+
+.quote-layout p a:hover {
+  color: #00E0B8;
+}
+
 b {
   font-weight: 700;
 }
