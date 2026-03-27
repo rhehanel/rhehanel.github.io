@@ -924,3 +924,40 @@ b {
       max-width: 100% !important;
     }
 }
+
+#bio {
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: "Hahmlet", "Noto Sans", sans-serif;
+  color: #ff6066;
+}
+
+#bio a {
+  color: #00A993;
+}
+
+#bio h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#bio ul {
+  margin-top: 20px;
+}
+
+#bio ul li {
+  margin-bottom:20px;
+}
+
+#bio strong{
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#bio h1 {
+  font-size: 26px;
+}
+
+#bio .info {
+  padding: 20px 0;
+}
