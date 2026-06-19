@@ -961,3 +961,84 @@ b {
 #bio .info {
   padding: 20px 0;
 }
+
+/* ------ works ------- */
+
+.works-list a {
+  color: #ff6066;
+  font-size: 16px;
+  font-family: 'Hahmlet';
+}
+
+.works-list li > a:hover {
+  color: #FF4f3f;
+  font-family: 'Hahmlet';
+}
+
+.works-list li > .hoverimg {
+  position: absolute;
+  display: none;
+}
+
+.works-list li > a:hover + .hoverimg {
+  display: block;
+}
+
+.work-layout {
+  color: #ff6066;
+}
+
+.work-layout > .flex {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.work-layout > .flex .info {
+  padding: 0 10px;
+}
+
+.work-layout > .flex .info > p:first-of-type {
+  text-indent: 90px;
+} 
+
+.work-layout > .flex .title {
+  font-size: 20px;
+  line-height: 28.6px;
+  margin: 4px 0 50px;
+  gap: 200px;
+}
+
+.work-layout > .flex .title h1 {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.work-layout > .flex .title small {
+  font-size: 14px;
+  font-weight: normal;
+  font-weight: 300;
+}
+
+.work-layout i {
+  font-style: italic;
+}
+
+.w-50 {
+  width: calc(50% - 1.5vw);
+}
+
+.w-50 img {
+  width: 100%;
+}
+
+.work-layout > .flex .info P {
+  max-width: 700px;
+}
+
+.work-layout .iframe-box {
+  width: 100%;
+}
+
+.work-layout .iframe-box iframe {
+  width: 100%;
+}
