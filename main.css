@@ -1001,6 +1001,10 @@ b {
   text-indent: 90px;
 } 
 
+.work-layout > .flex .info .text-wrap > p:first-of-type {
+  text-indent: 90px;
+} 
+
 .work-layout > .flex .title {
   font-size: 20px;
   line-height: 28.6px;
@@ -1041,4 +1045,11 @@ b {
 
 .work-layout .iframe-box iframe {
   width: 100%;  
+}
+
+.work-layout hr {
+  height:0px; 
+  border: 0;
+  border-top: 5px dotted #ff6066;
+  margin: 40px 0;
 }
