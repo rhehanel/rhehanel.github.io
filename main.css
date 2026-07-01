@@ -905,26 +905,6 @@ b {
   font-weight: 700;
 }
 
-@media (max-width: 820px) {
-    h2.main-instroduction a {
-        font-size: 10vw;
-    }
-
-    h1#CapitalEqualPain {
-        display: block;
-        text-align: center;
-        font-size: 3rem;
-    }
-
-    .flex {
-      gap: 15px;
-    }
-
-    img {
-      max-width: 100% !important;
-    }
-}
-
 #bio {
   max-width: 1200px;
   margin: 20px auto;
@@ -1052,4 +1032,41 @@ b {
   border: 0;
   border-top: 5px dotted #ff6066;
   margin: 40px 0;
+}
+
+@media (max-width: 820px) {
+    h2.main-instroduction a {
+        font-size: 10vw;
+    }
+
+    h1#CapitalEqualPain {
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .flex {
+      gap: 15px;
+    }
+
+    img {
+      max-width: 100% !important;
+    }
+
+    .work-layout > .flex {
+      display: block;
+    }
+
+    .work-layout > .flex > .w-50 {
+      width: 100%;
+      padding: 0;
+    }
+
+    .work-layout > .flex > :last-child {
+      margin-top: 50px;
+    }
+
+    .work-layout > .flex .title {
+      margin-top:0;
+    }
 }
